@@ -43,6 +43,7 @@ Run the following command:
 python vt.py
 ```
 It will open such interface of choice:
+
 ![IP/File choice interface](./includes/vt_py_demo.png) 
 
 ## File Structure
