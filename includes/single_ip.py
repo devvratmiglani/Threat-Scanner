@@ -2,7 +2,6 @@ import os
 import json
 import urllib.request
 import urllib.parse
-from datetime import datetime
 from settings import API_KEY, API_URL_IP
 
 def fetch_data(url):
