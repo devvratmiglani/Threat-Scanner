@@ -38,27 +38,26 @@ pip install -r requirements.txt
 
 ## Usage
 ### Scan a File
-Run the following command to scan a file:
+Run the following command:
 ```sh
-python single_file.py /path/to/file
+python vt.py
 ```
-
-### Scan an IP Address
-Run the following command to scan an IP:
-```sh
-python single_ip.py 192.168.1.1
-```
+It will open such interface of choice:
+![IP/File choice interface](./includes/vt_py_demo.png) 
 
 ## File Structure
 ```
 .
-├── single_file.py    # Script to scan files
-├── single_ip.py      # Script to scan IPs
-├── settings.py       # Configuration file for API keys
-├── vt.py             # Core logic for interacting with VirusTotal API
-├── .gitignore        # Files to ignore in git
-├── LICENSE           # License information
-├── README.md         # Documentation file
+|   .gitignore         # Files to ignore in git
+|   LICENSE            # License information
+|   README.md          # Documentation file
+|   settings.py        # Configuration file for API keys
+|   vt.py              # Entrypoint
+|
++---includes
+|   |   single_file.py # Include dependency
+|   |   single_ip.py   # Include dependency
+\---\---vt_py_demo.png # Demonstration image
 ```
 
 ## License
